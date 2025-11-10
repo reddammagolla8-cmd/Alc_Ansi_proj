@@ -3,6 +3,3 @@ apple
 box
 cat
 dog
-fox
-linux
-hi helli this is reddy
