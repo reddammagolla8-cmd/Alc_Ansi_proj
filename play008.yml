@@ -1,0 +1,11 @@
+---
+- name: Create a user on Linux
+  hosts: localhost
+  become: yes
+
+  tasks:
+    - name: Create user
+      user:
+        name: ansible_Gr_01
+        password: "{{ 'Password123' | password_hash('sha512') }}"
+        state: present
